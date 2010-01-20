@@ -1,0 +1,52 @@
+" These are the mappings for snipMate.vim. Putting it here ensures that it
+" will be mapped after other plugins such as supertab.vim.
+if !exists('loaded_snips') || exists('s:did_snips_mappings')
+	finish
+endif
+let s:did_snips_mappings = 1
+
+
+ino <silent> <tab> <c-r>=TriggerSnippet()<cr>
+snor <silent> <tab> <esc>i<right><c-r>=TriggerSnippet()<cr>
+ino <silent> <s-tab> <c-r>=BackwardsSnippet(-2)<cr>
+snor <silent> <s-tab> <esc>i<right><c-r>=BackwardsSnippet(-2)<cr>
+"ino <silent> <c-r><tab> <c-r>=ShowAvailableSnips()<cr>
+
+ino <silent> <c-k> <c-r>=JumpLine('k')<cr>
+snor <silent> <c-k> <esc>i<right><c-r>=JumpLine('k')<cr>
+ino <silent> <c-j> <c-r>=JumpLine('j')<cr>
+snor <silent> <c-j> <esc>i<right><c-r>=JumpLine('j')<cr>
+ino <silent> <c-h> <c-r>=JumpLine('h')<cr>
+snor <silent> <c-h> <esc>i<right><c-r>=JumpLine('h')<cr>
+ino <silent> <c-l> <c-r>=JumpLine("l")<cr>
+snor <silent> <c-l> <esc>i<right><c-r>=NextLine("l")<cr>
+
+ino <silent> <c-B> <c-r>=NewLine()<cr>
+snor <silent> <c-B> <esc>i<right><c-r>=NewLine()<cr>
+
+
+"ino <c-r> <esc>l<s-r>
+"ino <c-i> <esc>la
+
+" The default mappings for these are annoying & sometimes break snipMate.
+" You can change them back if you want, I've put them here for convenience.
+snor <bs> b<bs>
+snor <right> <esc>a
+snor <left> <esc>bi
+snor ' b<bs>'
+snor ` b<bs>`
+snor % b<bs>%
+snor U b<bs>U
+snor ^ b<bs>^
+snor \ b<bs>\
+snor <c-x> b<bs><c-x>
+
+" By default load snippets in snippets_dir
+if empty(snippets_dir)
+	finish
+endif
+
+call GetSnippets(snippets_dir, '_') " Get global snippets
+
+au FileType * if &ft != 'help' | call GetSnippets(snippets_dir, &ft) | endif
+" vim:noet:sw=4:ts=4:ft=vim

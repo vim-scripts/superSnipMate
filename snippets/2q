@@ -1,0 +1,3063 @@
+#================================================Tools=======================================
+snippet sn
+	snippet ${1}
+snippet ${
+	${${1}}${2}
+snippet 1
+	$${1}{1}${2}
+snippet 2
+	$${1}{2}${2}
+snippet 3
+	$${1}{3}${2}
+snippet 4
+	$${1}{4}${2}
+snippet 5
+	$${1}{5}${2}
+snippet 6
+	$${1}{6}${2}
+snippet 7
+	$${1}{7}${2}
+snippet 8
+	$${1}{8}${2}
+snippet 9
+	$${1}{9}${2}
+snippet td{
+	<td>${${1}}</td>
+snippet th{
+	<th>${${1}}</th>
+#================================================Symbols=======================================
+snippet {
+	{${1}}
+snippet {b
+	{${1}
+	}
+snippet '
+	'${1}'${2}
+snippet ';
+	'${1}';
+snippet "
+	"${1}"${2}
+snippet ";
+	"${1}";
+snippet '.
+	'.${1}.'
+snippet ".
+	".${1}."
+snippet (
+	(${1})${2}
+snippet ('
+	('${1}'${2})
+snippet ("
+	("${1}"${2})
+snippet +=
+	${1} += ${2}
+snippet +=;
+	${1} += ${2};
+snippet =;
+	=${1};
+snippet =';
+	= '${1}';
+snippet =";
+	= "${1}";
+snippet $[
+	$${1}[${2}]
+snippet $['
+	$${1}['${2}']${3}
+snippet $["
+	$${1}["${2}"]${2}
+snippet $[[
+	$${1}[${2}][${3}]
+snippet $[['
+	$${1}['${2}']['${3}']${4}
+snippet $[["
+	$${1}["${2}"]["${3}"]${4}
+snippet &n
+	&nbsp;${1}
+snippet <
+	<${1}>
+#===============================================JS======================================
+snippet ce
+	}catch(e){alert('${1} Error ${2}'+e.message);}
+snippet varfor
+	for(${1:var i=0};${2:i}${3:<count};${4:i++}){
+	}
+#================================================Variable Declare And Types====================
+#-----------------------Array-----------------------
+snippet ar
+	array(${1})
+snippet ar'
+	array('${1}'${2})
+snippet ar';
+	array('${1}'${2});
+snippet ar"
+	array("${1}"${2})
+snippet	ar";
+	array("${1}"${2});
+snippet ar;
+	array(${1});
+snippet arb
+	array(
+	${1}
+	)
+snippet arb;
+	array(
+	${1}
+	);
+snippet	a
+	array('${1}' =>${2})
+snippet a;
+	array('${1}' =>${2});
+snippet a'
+	array('${1}' => '${2}'${3})
+snippet a"
+	array('${1}' => "${2}"${3})
+snippet a';
+	array('${1}' => '${2}'${3});
+snippet a";
+	array('${1}' => "${2}"${3});
+snippet ab
+	array(
+	'${1}' =>${2}
+	)
+snippet ab;
+	array(
+	'${1}' =>${2}
+	);
+snippet ab'
+	array(
+	'${1}' => '${2}'${3}
+	)
+snippet ab';
+	array(
+	'${1}' => '${2}'${3}
+	);
+snippet ab"
+	array(
+	'${1}' => "${2}"${3}
+	)
+snippet ab";
+	array(
+	'${1}' => "${2}"${3}
+	);
+#-----------------------ae--------------------------
+snippet ae
+	'${1}' =>${2}
+snippet ae'
+	'${1}' => '${2}'${3}
+snippet ae"
+	'${1}' => "${2}"${3}
+snippet aear
+	'${1}' => array(${2})
+snippet aear'
+	'${1}' => array('${2}'${3})
+snippet aear';
+	'${1}' => array('${2}'${3});
+snippet aear"
+	'${1}' => array("${2}"${3})
+snippet	aear";
+	'${1}' => array("${2}"${3});
+snippet aear;
+	'${1}' => array(${2});
+snippet aearb
+	'${1}' => array(
+						${2}
+						)
+snippet aearb;
+	'${1}' => array(
+						${2}
+						);
+snippet	aea
+	'${1}' => array('${2}' =>${3})
+snippet aea;
+	'${1}' => array('${2}' =>${3});
+snippet aea'
+	'${1}' => array('${2}' => '${3}')
+snippet aea"
+	'${1}' => array('${2}' =? "${3}")
+snippet aea';
+	'${1}' => array('${2}' => '${3}');
+snippet aea";
+	'${1}' => array('${2}' => "${3}");
+snippet aeab
+	'${1}' => array(
+						'${2}' =>${3}
+						)
+snippet aeab;
+	'${1}' => array(
+						'${2}' =>${3}
+						);
+snippet aeab'
+	'${1}' => array(
+						'${2}' => '${3}'${4}
+						)
+snippet aeab';
+	'${1}' => array(
+						'${2}' => '${3}'${4}
+						);
+snippet aeab"
+	'${1}' => array(
+						'${2}' => "${3}"${4}
+						)
+snippet aeab";
+	'${1}' => array(
+						'${2}' => "${3}"${4}
+						);
+#-----------------------aa---------------------------
+#-----------------------Var-------------------------
+snippet var
+	var ${1} =${2}
+snippet var'
+	var ${1} = '${1}'
+snippet var;
+	var ${1} =${2};
+snippet var"
+	var ${1} = "${2}"
+snippet var';
+	var ${1} = '${2}';
+snippet var";
+	var ${1} = "${2}";
+snippet var$
+	var $${1} = ${2};
+#------------------------$------------------------------
+snippet $
+	$${1} =${2}
+snippet $;
+	$${1} =${2};
+snippet $'
+	$${1} = '${2}'${3}
+snippet $"
+	$${1} = "${2}"${3}
+snippet $';
+	$${1} = '${2}';${3}
+snippet $";
+	$${1} = "${2}";${3}
+snippet $a
+	$${1} = array(${2})
+snippet $a;
+	$${1} = array(${2});
+#================================================PHP Code====================================
+snippet php
+	<?php ${1}?>
+snippet php;
+	<?php ${1};?>
+snippet p
+	<?php ${1}?>
+snippet p;
+	<?php ${1};?>
+snippet phpb
+	<?php
+	${1}
+	?>
+snippet pb
+	<?php
+	${1}
+	?>
+snippet phe
+	<?= ${1};?>
+snippet phe'
+	<?= '${1}';?>
+snippet phe"
+	<?= "${1}";?>
+#---------------------------
+snippet e(
+	e(${1})
+snippet e(;
+	e(${1});
+snippet e('
+	e('${1}')
+snippet e(';
+	e('${1}');
+snippet e("
+	e("${1}")
+snippet e(";
+	e("${1}");
+snippet e(b
+	e(
+	${1}
+	)
+snippet e(b;
+	e(${1}
+	);
+snippet echo;
+	echo ${1};
+snippet ec
+	echo ${1}
+snippet ec;
+	echo ${1};
+snippet ec'
+	echo '${1}'
+snippet ec"
+	echo "${1}"
+snippet ec';
+	echo '${1}';
+snippet ec";
+	echo "${1}";
+snippet e
+	echo ${1}
+snippet e;
+	echo ${1};
+snippet e'
+	echo '${1}'
+snippet e"
+	echo "${1}"
+snippet e';
+	echo '${1}';
+snippet e";
+	echo "${1}";
+snippet pecho
+	<?php echo${1} ?>
+snippet pe
+	<?php echo${1} ?>
+snippet pecho;
+	<?php echo ${1};?>
+snippet pe;
+	<?php echo ${1};?>
+snippet pbecho
+	<?php
+		echo ${1}
+	?>
+snippet pbe
+	<?php
+		echo ${1}
+	?>
+snippet pbe;
+	<?php
+		echo ${1};
+	?>
+snippet pbecho;
+	<?php
+		echo ${1};
+	?>
+snippet tdecho
+	<td> <?php echo ${1};?></td>
+snippet tdbecho
+	<td>
+	<?php echo ${1};?>
+	</td>
+snippet tde
+	<td> <?php echo ${1};?></td>
+snippet tdbe
+	<td>
+	<?php echo ${1};?>
+	</td>
+snippet stt
+	strtotime(${1})
+#--------------------------Cirle And Conditions--------------------------------
+snippet if
+	if(${1}){
+	}
+snippet else
+	else{
+	${1}
+	}
+snippet els
+	else{
+	${1}
+	}
+snippet elsif
+	else if(${1}){
+	}
+snippet elseif
+	else if(${1}){
+	}
+snippet phpif
+	<?php
+	if(${1}){
+	?>
+	
+	<?php
+	}
+	?>
+snippet phpifi
+	if(${1}){
+	?>
+	
+	<?php
+	}
+snippet foreach
+	foreach($${1} as $${2}){
+	}
+snippet fe
+	foreach($${1} as $${2}){
+	}
+snippet fe:
+	foreach($${1}	as $${2}):
+	endforeach;
+snippet pfe:
+	<?php foreach($${1} as $${2}): ?>
+	<?php endforeach; ?>
+snippet fee;
+	endforeach;
+snippet pfee;
+	<?php endforeach; ?>
+snippet for
+	for ($${1:i} = 0; $$1 < ${2:count}; $$1++) {
+	}
+snippet for-
+	for ($${1:i} = 0; $$1 < ${2:count}; $$1--) {
+	}
+snippet phpforeach
+	<?php
+	foreach($${1}	as $${2}){
+	?>
+	
+	<?php
+	}
+	?>
+snippet pforeach
+	<?php
+	foreach($${1}	as $${2}){
+	?>
+	
+	<?php
+	}
+	?>
+snippet phpfe
+	<?php
+	foreach($${1}	as $${2}){
+	?>
+	
+	<?php
+	}
+	?>
+snippet pfe
+	<?php
+	foreach($${1}	as $${2}){
+	?>
+	
+	<?php
+	}
+	?>
+snippet phpforeachi
+	foreach($${1}	as $${2}){
+	?>
+	
+	<?php
+	}
+snippet phpfei
+	foreach($${1}	as $${2}){
+	?>
+	
+	<?php
+	}
+snippet pfei
+	foreach($${1}	as $${2}){
+	?>
+	
+	<?php
+	}
+snippet phpfor
+	<?php
+	for($i=0 ;$i<${1:$count} ;$i++){
+	?>
+
+	<?php
+	}
+	?>
+snippet phpfori
+	for($i=0 ;$i<${1:$count} ;$i++){
+	?>
+
+	<?php
+	}
+#++++++++++++++++++++++++++++++++++++++++++++++++Methods+++++++++++++++++++++++++++++++++++++
+snippet ino
+	include_once('${1}');
+snippet in
+	include('${1}');
+#================================================Cake Variable =====================
+snippet sca
+	var $scaffold;
+snippet vle
+	validationErrors
+snippet bt
+	var $belongsTo = array('${1}'${2});
+snippet ho
+	var $hasOne = array('${1}'${2});
+snippet hm
+	var $hasMany = array('${1}'${2});
+snippet hbm
+	var $hasAndBelongsToMany = array('${1}'${2});
+#================================================Cake Functions=====================================
+snippet _(
+	__(${1})
+snippet _('
+	__('${1}')
+snippet _("
+	__("${1}")
+snippet bind
+	$this->${1}->bindModel(array('${3}' => array(
+																					'${4}' =>${5}
+													)										)
+							 );
+snippet create
+	$this->${1}->create();
+snippet cr
+	$this->${1}->create();
+snippet empty
+	empty(${1})
+snippet em
+	empty(${1})
+snippet unbind
+	$this->${1}->unbindModel(array('${2}' =>array('${3}'${4})));
+snippet del
+	$this->${1}->del(${2})
+snippet header
+	header(${1});
+snippet he
+	header(${1});
+snippet he'
+	header('${1}'${2});
+snippet he"
+	header("${1}"${2});
+snippet isset
+	isset(${1})
+snippet is
+	isset(${1})
+snippet met
+	${1}(${2})
+snippet met'
+	${1}('${2}')
+snippet met"
+	${1}("2")
+snippet met';
+	${1}('${2}');
+snippet met";
+	${1}('${2}');
+snippet ret
+	return ${1};
+snippet save
+	$this->${1}->save(${2})
+snippet s
+	$this->${1}->save(${2})
+snippet save'
+	$this->${1}->save('${2}'${3});
+snippet s'
+	$this->${1}->save('${2}'${3});
+snippet sizeof
+	sizeof(${1})
+snippet so
+	sizeof(${1})
+snippet thsave
+	$this->save(${1});
+snippet ths
+	$this->save(${1});
+snippet thsave'
+	$this->save('${1}'${2});
+snippet ths'
+	$this->save('${1}'${2});
+snippet thse'
+	$this->set('${1}',${2});
+snippet thsc
+	$this->set(compact(${1}));
+snippet thsc'
+	$this->set(compact('${1}'));
+snippet thse
+	$this->set(${1});
+snippet set
+	$this->${1}->set(${2});
+snippet set'
+	$this->${1}->set('${2}',${3});
+snippet set"
+	$this->${1}->set("${2}"${3});
+snippet sf
+	$this->${1}->saveField(${2})
+snippet sf'
+	$this->${1}->saveField('${2}'${3})
+snippet thsf
+	$this->saveField(${1});
+snippet thsf'
+	$this->saveField('${1}')
+snippet find
+	$this->${1}->find(${2})
+snippet findb
+	$this->${1}->find(
+							 ${1}
+							 )
+snippet finda
+	$this->${1}->find('all',${2})
+snippet findab
+	$this->${1}->find('all',
+						   ${2}
+	             )
+snippet fd
+	$this->${1}->find(${2})
+snippet fdb
+	$this->${1}->find(
+							 ${1}
+							 )
+snippet fda
+	$this->${1}->find('all',${2})
+snippet fdab
+	$this->${1}->find('all',
+						   ${2}
+	             )
+snippet findid
+	$this->${1}->findById(${2})
+snippet findid'
+	$this->${1}->findById('${2}')
+snippet findid"
+	$this->${1}->findById("${2}")
+snippet fdid
+	$this->${1}->findById(${2})
+snippet fdid'
+	$this->${1}->findById('${2}')
+snippet fdid"
+	$this->${1}->findById("${2}")
+snippet thfindid
+	$this->findById(${1})
+snippet thfindid'
+	$this->findById('${1}')
+snippet thfindid"
+	$this->findById("${1}")
+snippet thf
+	$this->find(${1})
+snippet thfb
+	$this->find(
+	       ${1}
+	       )
+snippet thfa
+	$this->find('all',${1})
+snippet thfab
+	$this->find('all',
+	       ${1}
+	       )
+snippet flash
+	$this->Session->setFlash(__(${1}));
+snippet flash'
+	$this->Session->setFlash(__('${1}',${2:true}));
+snippet flash"
+	$this->Session->setFlash(__("${1}",${2:true}));
+snippet redirect
+	$this->redirect(${1});
+snippet redirecti
+	$this->redirect(array('action' => 'index'));
+snippet redirecta
+	$this->redirect(array('action' => '${1}'${2}));
+snippet redirectca
+	$this->redirect(array('controller' => '${1}', 'action' => '${2}'${3})
+snippet rd
+	$this->redirect(${1});
+snippet rdi
+	$this->redirect(array('action' => 'index'));
+snippet rda
+	$this->redirect(array('action' => '${1}'${2}));
+snippet rdca
+	$this->redirect(array('controller' => '${1}', 'action' => '${2}'${3}));
+snippet fr
+	$this->Session->setFlash(__(${1}));
+	$this->redirect(${2});
+snippet fr'
+	$this->Session->setFlash(__('${1}',${2:true}));
+	$this->redirect(${3});
+snippet fr"
+	$thsi->Session->setFlash(__("${1}",${2:true}));
+	$this->redirect(${3});
+snippet fra
+	$this->Session->setFlash(__(${1}));
+	$this->redirect(array('action' => '${2}'${3}));
+snippet frca
+	$this->Session->setFlash(__(${1}));
+	$this->redirect(array('controller' => '${2}',	'action' => '${3}'${4}));
+snippet fr'a
+	$this->Session->setFlash(__('${1}',${2:true}));
+	$this->redirect(array('action' => '${3}'${4}));
+snippet fr"a
+	$this->Session->setFlash(__("${1}",${2:true}));
+	$this->redirect(array('action' => '${3}'${4}));
+snippet fr'ca
+	$this->Session->setFlash(__('${1}',${2:true}));
+	$this->redirect(array('controller' => '${3}',	'action' => '${4}'${5}));
+snippet fr"ca
+	$this->Session->setFlash(__("${1}",${2:true}));
+	$this->redirect(array('controller' => '${3}',	'action' => '${4}'${5}));
+snippet thdel
+	$this->del(${1})
+snippet val
+	$this->${1}->validates()
+snippet thval
+	$this->validates()
+snippet vale
+	$this->${1}->validationErrors
+snippet thvale
+	$this->validationErrors
+#-------------------------------------Outter--------------------------
+snippet cm
+	class ${1:} extends AppModel{
+		var $name = '$1';
+	}
+snippet pcm
+	<?php
+		class ${1:} extends AppModel{
+			var $name = '$1';
+		}
+	?>
+snippet cmm
+	class AppModel extends Model{
+	${1}
+	}
+snippet pcmm
+	<?php
+		class AppModel extends Model{
+		${1}
+		}
+	?>
+snippet cmx
+	class	${1:} extends ${2}Model{
+		var $name = '$1';
+	}
+snippet pcmx
+	<?php
+		class	${1:} extends ${2}Model{
+			var $name = '$1';
+		}
+	?>
+snippet cc
+	class ${1:}Controller extends AppController{
+		var $name = '$1';	
+	}
+snippet ccs
+	class ${1:}Controller extends AppController{
+		var $name = '$1';	
+		var $scaffold;
+	}
+snippet pcc
+	<?php
+		class ${1:}Controller extends AppController{
+			var $name = '$1';	
+		}
+	?>
+snippet pccs
+	<?php
+		class ${1:}Controller extends AppController{
+			var $name = '$1';	
+			var $scaffold;
+		}
+	?>
+snippet ccc
+	class AppController extends Controller{
+	${1}
+	}
+snippet pccc
+	<?php
+		class AppController extends Controller{
+		${1}
+		}
+	?>
+snippet ccx
+	class ${1:}Controller extends ${2}Controller{
+		var $name = '$1';		
+	}
+snippet pccx
+	<?php
+		class ${1:}Controller extends ${2}Controller{
+			var $name = '$1';		
+		}
+	?>
+snippet func
+	function ${1}(${2}){
+	}
+snippet phpfunc
+	<?php
+		function ${1}(${2}){
+		}
+	?>
+snippet pfunc
+	<?php
+		function ${1}(${2}){
+	?>
+	<?php
+		}
+	?>
+snippet pfunci
+		function ${1}(${2}){
+	?>
+	<?php
+		}
+#---------------------------------------Inner----------------------------
+snippet debug;
+	debug(${1})
+snippet debug
+	debug(${1});
+snippet deb
+	debug($${1});
+snippet reqa
+	$this->requestAction(${1})
+snippet reqa;
+	$this->requestAction(${1});
+snippet reqa"
+	$this->requestAction("${1}")
+snippet reqa";
+	$this->requestAction("${1}");
+snippet reqa';
+	$this->requestAction('${1}');
+snippet _e
+	_e(${1});
+snippet _e'
+	_e('${1}');${2}
+snippet _e"
+	_e("${1}");${2}
+snippet p_e
+	<?php e(i${1});?>
+snippet p_e'
+	<?php _e('${1}');${2}?>
+snippet p_e"
+	<?php _e("${1}");${2}?>
+snippet ifps
+	if(have_posts()):
+	${1}
+	endif;
+snippet elseps
+	else:${1}
+snippet peps
+	<?php else:?>
+snippet pifposts
+	<?php if(have_posts()): ${1}?>
+	<?php endif;?>
+snippet pifps
+	<?php if(have_posts()): ${1}?>
+	<?php endif;?>
+snippet whileposts
+	while(have_posts()):
+	${1}
+	endwhile;
+snippet wps
+	while(have_posts()):
+	${1}
+	endwhile;
+snippet pwhileposts
+	<?php while(have_posts()): ${1}?>
+	<?php endwhile;?>
+snippet pwps
+	<?php while(have_posts()): ${1}?>
+	<?php endwhile;?>
+snippet wp
+	while(have_posts()):
+		the_post();${1}
+	endwhile;
+snippet pwp
+	<?php while(have_posts()): the_post(); ?>
+	${1}
+	<?php endwhile;?>
+snippet tt
+	the_title();${1}
+snippet ptt
+	<?php the_title();${1}?>
+snippet tp
+	the_post();${1}
+snippet ptp
+	<?php the_post();${1}?>
+snippet tcl
+	the_class();${1}
+snippet ptcl
+	<?php the_class();${1}?>
+snippet tcon
+	the_content();${1}
+snippet ptcon
+	<?php the_content();${1}?>
+snippet tid
+	the_ID();${1}
+snippet ptid
+	<?php the_ID();${1}?>
+snippet tau
+	the_author();${1}
+snippet ptau
+	<?php the_author();${1}?>
+snippet ttime
+	the_time(${1});
+snippet pttime
+	<?php the_time(${1});?>
+snippet ttags
+	the_tags(${1});
+snippet pttags
+	<?php the_tags(${1});?>
+snippet ttags'
+	the_tags('${1}','${2}','${3}');${4}
+snippet pttags'
+	<?php the_tags('${1}','${2}','${3}');${4}?>
+snippet ttags"
+	the_tags("${1}","${2}","${3}");${4}
+snippet ptags"
+	<?php the_tags('${1}','${2}','${3}');${4}?>
+snippet tcat
+	the_category(${1});
+snippet ptcat
+	<?php the_category(${1});?>
+snippet tcat'
+	the_category('${1}');
+snippet ptcat'
+	<?php the_category('${1}');?>
+snippet epl
+	edit_post_link(${1});
+snippet epl'
+	edit_post_link('${1}','${2}','${3}');
+snippet pepl
+	<?php edit_post_link('${1}','${2}','${3}');?>
+snippet cpl
+	comments_popup_link(${1});
+snippet cpl'
+	comments_popup_link('${1}','${2}','${3}');
+snippet pcpl
+	<?php comments_popup_link(${1});?>
+snippet pcpl'
+	<?php comments_popup_link('${1}','${2}','${3}');?>
+snippet pnl
+	post_nav_link();${1}
+snippet ppnl
+	<?php post_nav_link();${1}?>
+snippet npl
+	next_post_link(${1});
+snippet pnpl
+	<?php next_post_link(${1});?>
+snippet ppl
+	previous_post_link(${1});
+snippet pppl
+	<?php previous_post_link(${1});?>
+snippet tl
+	the_permalink();${1}
+snippet ptl
+	<?php the_permalink();${1}?>
+#================================================HTML codes======================================
+snippet <body>
+	<body>
+	${1}
+	</body>
+snippet <bd>
+	<body>
+	${1}
+	</body>
+snippet <css
+	<?php echo $html->css('${1:styles}'); ?>
+snippet <css>
+	<?php echo $html->css('${1:styles}'); ?>
+snippet dt1.0
+	<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+snippet <head>
+	<head>
+	${1}
+	</head>
+snippet <hd>
+	<head>
+	${1}
+	</head>
+snippet <xhtml>
+	<html xmlns="http://www.w3.org/1999/xhtml" ${1}>
+	</html>
+snippet <ht>
+	<html>
+	${1}
+	</html>
+snippet <htb>
+	<html>
+	${1}
+	</html>
+snippet <ht
+	<html xmlns="http://www.w3.org/1999/xhtml" ${1}>
+	</html>
+snippet <htb
+	<html xmlns="http://www.w3.org/1999/xhtml" ${1}>
+	</html>
+snippet <title>
+	<title>${1}</title>
+snippet <tt>
+	<title>${1}</title>
+snippet <titleb>
+	<title>
+	${1}
+	</title>
+snippet <ttb>
+	<tittle>
+	${1}
+	</title>
+snippet colspan
+	colspan="${1}"${2}
+snippet cs
+	colspan="${1}"${2}
+snippet id
+	id="${1}"${2}
+snippet href
+	href="${1}"${2}
+snippet hr
+	href="${1}"${2}
+snippet src
+	src="${1}"${2}
+snippet title
+	title="${1}"${2}
+snippet cls
+	class="${1}"${2}
+snippet cellp
+	cellpadding="${1}"${2}
+snippet cells
+	cellspacing="${1}"${2}
+#------------------------------------------------Styles-----------------------------------
+snippet style
+	style="${1}"
+snippet st
+	style="${1}"
+snippet background
+	background: #${1}
+snippet bkgd
+	background: #${1}
+snippet border
+	border: ${1}
+snippet color
+	color: #${1}
+snippet colSpan
+	col-span: ${1}
+snippet cS
+	col-span: ${1}
+snippet height
+	height: ${1}
+snippet hei
+	height: ${1}
+snippet textAlign
+	text-align: ${1}
+snippet ta
+	text-align: ${1}
+snippet width
+	width: ${1}
+snippet wid
+	width: ${1}
+#------------------------------------------------Dom Elements--------------------
+snippet doc
+	document${1}
+snippet win
+	window${1}
+snippet bo
+	body${1}
+#++++++++++++++++++++++++++++++++++++++++++++++++HTML Elements++++++++++++++++++++++++++++++
+snippet <js>
+	<script type="text/javascript">${1}</script>
+snippet <jsb>
+	<script type="text/javascript">
+	${1}
+	</script>
+snippet <js
+	<script type="text/javascript" src="${1}"></script>
+snippet <b>
+	<b>${1}</b>
+snippet <bb>
+	<b>
+	${1}
+	</b>
+snippet <b
+	<b ${1}></b>
+snippet <bb
+	<b ${1}>
+	</b>
+snippet br
+	<br />
+snippet <a>
+	<a>${1}</a>
+snippet <ab>
+	<a>
+	${1}
+	</a>
+snippet <a
+	<a ${1}></a>
+snippet <ab
+	<a ${1}>
+	</a>
+snippet <ah
+	<a href="${1}"${2}></a>
+snippet <abh
+	<a href="${1}"${2}>
+	</a>
+snippet <form>
+	<form>${1}</form>
+snippet <formb>
+	<form>
+	${1}
+	</form>
+snippet <form
+	<form ${1}></form>
+snippet <formb
+	<form ${1}>
+	</form>
+snippet <fo>
+	<form>${1}</form>
+snippet <fob>
+	<form>
+	${1}
+	</form>
+snippet <fo
+	<form ${1}></form>
+snippet <fob
+	<form ${1}>
+	</form>
+snippet <div>
+	<div>${1}</div>
+snippet <div
+	<div ${1}></div>
+snippet <divb>
+	<div>
+	${1}
+	</div>
+snippet <divb
+	<div ${1}>
+	</div>
+snippet <fl>
+	<fieldset>
+		<legend>${1}</legend>
+	</fieldset>
+snippet <fi>
+	<field>
+	${1}
+	</field>
+snippet <le>
+	<legend>${1}</legend>
+snippet <input>
+	<input type="text" />
+snippet <inp>
+	<input type="text" />
+snippet <input
+	<input type="${1}"${2} />
+snippet <inp
+	<input type="${1}"${2} />
+#--------------------------HHH------------------------------
+snippet <h1>
+	<h1>${1}</h1>
+snippet <h1b>
+	<h1>
+	${1}
+	</h1>
+snippet <h2>
+	<h2>${1}</h2>
+snippet <h2b>
+	<h2>
+	${1}
+	</h2>
+snippet <h3>
+	<h3>${1}</h3>
+snippet <h3b>
+	<h3>
+	${1}
+	</h3>
+snippet <h4>
+	<h4>${1}</h4>
+snippet <h4b>
+	<h4>
+	${1}
+	</h4>
+snippet <h5>
+	<h5>${1}</h5>
+snippet <h5b>
+	<h5>
+	${1}
+	</h5>
+snippet <h6>
+	<h6>${1}</h6>
+snippet <h6b>
+	<h6>
+	${1}
+	</h6>
+snippet <span>
+	<span>${1}</span>
+snippet <sp>
+	<span>${1}</span>
+snippet <spanb>
+	<span>
+	${1}
+	</span>
+snippet <spb>
+	<span>
+	${1}
+	</span>
+snippet <span
+	<span ${1}></span>
+snippet <sp
+	<span ${1}></span>
+snippet <spanb
+	<span ${1}>
+	</span>
+snippet <spb
+	<span ${1}>
+	</span>
+snippet <ul>
+	<ul>${1}</ul>
+snippet <uli>
+	<ul><li>${1}</li></ul>
+snippet <ulib>
+	<ul>
+		<li>${1}</li>
+	</ul>
+snippet <ulb>
+	<ul>
+	${1}
+	</ul>
+snippet <ul
+	<ul ${1}></ul>
+snippet <ulb
+	<ul ${1}>
+	</ul>
+snippet <ol>
+	<ol>${1}</ol>
+snippet <olb>
+	<ol>
+	${1}
+	</ol>
+snippet <ol
+	<ol ${1}></ol>
+snippet <olb
+	<ol ${1}>
+	</ol>
+snippet <li>
+	<li>${1}</li>
+snippet <lia>
+	<li><a>${1}</a></li>
+snippet <lib>
+	<li>
+	${1}
+	</li>
+snippet <li
+	<li ${1}></li>
+snippet <lia
+	<li ${1}>
+	<a></a>
+	</li>
+snippet <lib
+	<li ${1}>
+	</li>
+snippet <li>1
+	<li>${1}</li>
+snippet <li>2
+	<li>${1}</li>
+	<li></li>
+snippet <li>3
+	<li>${1}</li>
+	<li></li>
+	<li></li>
+snippet <li>4
+	<li>${1}</li>
+	<li></li>
+	<li></li>
+	<li></li>
+snippet <li>5
+	<li>${1}</li>
+	<li></li>
+	<li></li>
+	<li></li>
+	<li></li>
+snippet <li>6
+	<li>${1}</li>
+	<li></li>
+	<li></li>
+	<li></li>
+	<li></li>
+	<li></li>
+snippet <li>7
+	<li>${1}</li>
+	<li></li>
+	<li></li>
+	<li></li>
+	<li></li>
+	<li></li>
+	<li></li>
+snippet <li>8
+	<li>${1}</li>
+	<li></li>
+	<li></li>
+	<li></li>
+	<li></li>
+	<li></li>
+	<li></li>
+	<li></li>
+snippet <li>9
+	<li>${1}</li>
+	<li></li>
+	<li></li>
+	<li></li>
+	<li></li>
+	<li></li>
+	<li></li>
+	<li></li>
+	<li></li>
+snippet <li1
+	<li class="${1}"></li>
+snippet <li2
+	<li class="${1:}"></li>
+	<li class="$1"></li>
+snippet <li3
+	<li class="${1:}"></li>
+	<li class="$1"></li>
+	<li class="$1"></li>
+snippet <li4
+	<li class="${1:}"></li>
+	<li class="$1"></li>
+	<li class="$1"></li>
+	<li class="$1"></li>
+snippet <li5
+	<li class="${1:}"></li>
+	<li class="$1"></li>
+	<li class="$1"></li>
+	<li class="$1"></li>
+	<li class="$1"></li>
+snippet <li6
+	<li class="${1:}"></li>
+	<li class="$1"></li>
+	<li class="$1"></li>
+	<li class="$1"></li>
+	<li class="$1"></li>
+	<li class="$1"></li>
+snippet <li7
+	<li class="${1:}"></li>
+	<li class="$1"></li>
+	<li class="$1"></li>
+	<li class="$1"></li>
+	<li class="$1"></li>
+	<li class="$1"></li>
+	<li class="$1"></li>
+snippet <li8
+	<li class="${1:}"></li>
+	<li class="$1"></li>
+	<li class="$1"></li>
+	<li class="$1"></li>
+	<li class="$1"></li>
+	<li class="$1"></li>
+	<li class="$1"></li>
+	<li class="$1"></li>
+snippet <li9
+	<li class="${1:}"></li>
+	<li class="$1"></li>
+	<li class="$1"></li>
+	<li class="$1"></li>
+	<li class="$1"></li>
+	<li class="$1"></li>
+	<li class="$1"></li>
+	<li class="$1"></li>
+	<li class="$1"></li>
+snippet <lia>1
+	<li><a>${1}</a></li>
+snippet <lia>2
+	<li><a>${1}</a></li>
+	<li></li>
+snippet <lia>3
+	<li><a>${1}</a></li>
+	<li><a></a></li>
+	<li><a></a></li>
+snippet <lia>4
+	<li><a>${1}</a></li>
+	<li><a></a></li>
+	<li><a></a></li>
+	<li><a></a></li>
+snippet <lia>5
+	<li><a>${1}</a></li>
+	<li><a></a></li>
+	<li><a></a></li>
+	<li><a></a></li>
+	<li><a></a></li>
+snippet <lia>6
+	<li><a>${1}</a></li>
+	<li><a></a></li>
+	<li><a></a></li>
+	<li><a></a></li>
+	<li><a></a></li>
+	<li><a></a></li>
+snippet <lia>7
+	<li><a>${1}</a></li>
+	<li><a></a></li>
+	<li><a></a></li>
+	<li><a></a></li>
+	<li><a></a></li>
+	<li><a></a></li>
+	<li><a></a></li>
+	<li><a></a></li>
+snippet <lia>8
+	<li><a>${1}</a></li>
+	<li><a></a></li>
+	<li><a></a></li>
+	<li><a></a></li>
+	<li><a></a></li>
+	<li><a></a></li>
+	<li><a></a></li>
+	<li><a></a></li>
+snippet <lia>9
+	<li><a>${1}</a></li>
+	<li><a></a></li>
+	<li><a></a></li>
+	<li><a></a></li>
+	<li><a></a></li>
+	<li><a></a></li>
+	<li><a></a></li>
+	<li><a></a></li>
+	<li><a></a></li>
+snippet <lia1
+	<li class="${1:}"><a></a></li>
+snippet <lia2
+	<li class="${1:}"><a></a></li>
+	<li class="$1"><a></a></li>
+snippet <lia3
+	<li class="${1:}"><a></a></li>
+	<li class="$1"><a></a></li>
+	<li class="$1"><a></a></li>
+snippet <lia4
+	<li class="${1:}"><a></a></li>
+	<li class="$1"><a></a></li>
+	<li class="$1"><a></a></li>
+	<li class="$1"><a></a></li>
+snippet <lia5
+	<li class="${1:}"><a></a></li>
+	<li class="$1"><a></a></li>
+	<li class="$1"><a></a></li>
+	<li class="$1"><a></a></li>
+	<li class="$1"><a></a></li>
+snippet <lia6
+	<li class="${1:}"><a></a></li>
+	<li class="$1"><a></a></li>
+	<li class="$1"><a></a></li>
+	<li class="$1"><a></a></li>
+	<li class="$1"><a></a></li>
+	<li class="$1"><a></a></li>
+snippet <lia7
+	<li class="${1:}"><a></a></li>
+	<li class="$1"><a></a></li>
+	<li class="$1"><a></a></li>
+	<li class="$1"><a></a></li>
+	<li class="$1"><a></a></li>
+	<li class="$1"><a></a></li>
+	<li class="$1"><a></a></li>
+snippet <lia8
+	<li class="${1:}"><a></a></li>
+	<li class="$1"><a></a></li>
+	<li class="$1"><a></a></li>
+	<li class="$1"><a></a></li>
+	<li class="$1"><a></a></li>
+	<li class="$1"><a></a></li>
+	<li class="$1"><a></a></li>
+	<li class="$1"><a></a></li>
+snippet <lia9
+	<li class="${1:}"><a></a></li>
+	<li class="$1"><a></a></li>
+	<li class="$1"><a></a></li>
+	<li class="$1"><a></a></li>
+	<li class="$1"><a></a></li>
+	<li class="$1"><a></a></li>
+	<li class="$1"><a></a></li>
+	<li class="$1"><a></a></li>
+	<li class="$1"><a></a></li>
+snippet <liba1
+	<li class="${1:}">
+		<a></a>
+	</li>
+snippet <liba2
+	<li class="${1:}">
+		<a></a>
+	</li>
+	<li class="$1">
+		<a></a>
+	</li>
+snippet <liba3
+	<li class="${1:}">
+		<a></a>
+	</li>
+	<li class="$1">
+		<a></a>
+	</li>
+	<li class="$1">
+		<a></a>
+	</li>
+snippet <liba4
+	<li class="${1:}">
+		<a></a>
+	</li>
+	<li class="$1">
+		<a></a>
+	</li>
+	<li class="$1">
+		<a></a>
+	</li>
+	<li class="$1">
+		<a></a>
+	</li>
+snippet <liba5
+	<li class="${1:}">
+		<a></a>
+	</li>
+	<li class="$1">
+		<a></a>
+	</li>
+	<li class="$1">
+		<a></a>
+	</li>
+	<li class="$1">
+		<a></a>
+	</li>
+	<li class="$1">
+		<a></a>
+	</li>
+snippet <liba6
+	<li class="${1:}">
+		<a></a>
+	</li>
+	<li class="$1">
+		<a></a>
+	</li>
+	<li class="$1">
+		<a></a>
+	</li>
+	<li class="$1">
+		<a></a>
+	</li>
+	<li class="$1">
+		<a></a>
+	</li>
+	<li class="$1">
+		<a></a>
+	</li>
+snippet <liba7
+	<li class="${1:}">
+		<a></a>
+	</li>
+	<li class="$1">
+		<a></a>
+	</li>
+	<li class="$1">
+		<a></a>
+	</li>
+	<li class="$1">
+		<a></a>
+	</li>
+	<li class="$1">
+		<a></a>
+	</li>
+	<li class="$1">
+		<a></a>
+	</li>
+	<li class="$1">
+		<a></a>
+	</li>
+snippet <liba8
+	<li class="${1:}">
+		<a></a>
+	</li>
+	<li class="$1">
+		<a></a>
+	</li>
+	<li class="$1">
+		<a></a>
+	</li>
+	<li class="$1">
+		<a></a>
+	</li>
+	<li class="$1">
+		<a></a>
+	</li>
+	<li class="$1">
+		<a></a>
+	</li>
+	<li class="$1">
+		<a></a>
+	</li>
+	<li class="$1">
+		<a></a>
+	</li>
+snippet <liba9
+	<li class="${1:}">
+		<a></a>
+	</li>
+	<li class="$1">
+		<a></a>
+	</li>
+	<li class="$1">
+		<a></a>
+	</li>
+	<li class="$1">
+		<a></a>
+	</li>
+	<li class="$1">
+		<a></a>
+	</li>
+	<li class="$1">
+		<a></a>
+	</li>
+	<li class="$1">
+		<a></a>
+	</li>
+	<li class="$1">
+		<a></a>
+	</li>
+	<li class="$1">
+		<a></a>
+	</li>
+snippet <p>
+	<p>${1}</p>
+snippet <pb>
+	<p>
+	${1}
+	</p>
+snippet <p
+	<p ${1}></p>
+snippet <pb
+	<p ${1}>
+	</p>
+#---------------------------Table Elements----------------------------------
+snippet <table>
+	<table> ${1}</table>
+snippet <tableb>
+	<table>
+	${1}
+	</table>
+snippet <table
+	<table ${1}></table>
+snippet <tableb
+	<table ${1}>
+	</table>
+snippet <tb>
+	<table> ${1}</table>
+snippet <tbb>
+	<table>
+	${1}
+	</table>
+snippet <tb
+	<table ${1}></table>
+snippet <tbb
+	<table ${1}>
+	</table>
+snippet <tr>
+	<tr> ${1}</tr>
+snippet <trb>
+	<tr>
+	${1}
+	</tr>
+snippet <tr
+	<tr ${1}></tr>
+snippet <trb
+	<tr ${1}>
+	</tr>
+snippet <td>
+	<td> ${1}</td>
+snippet <td>2
+	<td>${1}</td>
+	<td>${2}</td>
+snippet <td>3
+	<td>${1}</td>
+	<td>${2}</td>
+snippet <td>4
+	<td>${1}</td>
+	<td>${2}</td>
+	<td>${3}</td>
+	<td>${4}</td>
+snippet <td>5
+	<td>${1}</td>
+	<td>${2}</td>
+	<td>${3}</td>
+	<td>${4}</td>
+	<td>${5}</td>
+snippet <td>6
+	<td>${1}</td>
+	<td>${2}</td>
+	<td>${3}</td>
+	<td>${4}</td>
+	<td>${5}</td>
+	<td>${6}</td>
+snippet <td>7
+	<td>${1}</td>
+	<td>${2}</td>
+	<td>${3}</td>
+	<td>${4}</td>
+	<td>${5}</td>
+	<td>${6}</td>
+	<td>${7}</td>
+snippet <td>8
+	<td>${1}</td>
+	<td>${2}</td>
+	<td>${3}</td>
+	<td>${4}</td>
+	<td>${5}</td>
+	<td>${6}</td>
+	<td>${7}</td>
+	<td>${8}</td>
+snippet <td>9
+	<td>${1}</td>
+	<td>${2}</td>
+	<td>${3}</td>
+	<td>${4}</td>
+	<td>${5}</td>
+	<td>${6}</td>
+	<td>${7}</td>
+	<td>${8}</td>
+	<td>${9}</td>
+snippet <td>10
+	<td>${1}</td>
+	<td>${2}</td>
+	<td>${3}</td>
+	<td>${4}</td>
+	<td>${5}</td>
+	<td>${6}</td>
+	<td>${7}</td>
+	<td>${8}</td>
+	<td>${9}</td>
+	<td>${10}</td>
+snippet <td2>
+	<td > ${1}</td>
+	<td > </td>
+snippet <td3>
+	<td > ${1}</td>
+	<td > </td>
+	<td > </td>
+snippet <td4>
+	<td > ${1}</td>
+	<td > </td>
+	<td > </td>
+	<td > </td>
+snippet <td5>
+	<td > ${1}</td>
+	<td > </td>
+	<td > </td>
+	<td > </td>
+	<td > </td>
+snippet <td6>
+	<td > ${1}</td>
+	<td > </td>
+	<td > </td>
+	<td > </td>
+	<td > </td>
+	<td > </td>
+snippet <td7>
+	<td > ${1}</td>
+	<td > </td>
+	<td > </td>
+	<td > </td>
+	<td > </td>
+	<td > </td>
+	<td > </td>
+snippet <td8>
+	<td > ${1}</td>
+	<td > </td>
+	<td > </td>
+	<td > </td>
+	<td > </td>
+	<td > </td>
+	<td > </td>
+	<td > </td>
+snippet <td9>
+	<td > ${1}</td>
+	<td > </td>
+	<td > </td>
+	<td > </td>
+	<td > </td>
+	<td > </td>
+	<td > </td>
+	<td > </td>
+	<td > </td>
+snippet <td10>
+	<td > ${1}</td>
+	<td > </td>
+	<td > </td>
+	<td > </td>
+	<td > </td>
+	<td > </td>
+	<td > </td>
+	<td > </td>
+	<td > </td>
+	<td > </td>
+snippet <tdb>
+	<td>
+	${1}
+	</td>
+snippet <td
+	<td ${1}></td>
+snippet <tdb
+	<td ${1}>
+	</td>
+snippet <trd>
+	<tr><td> ${1}</td></tr>
+snippet <trbd>
+	<tr>
+		<td> ${1}</td>
+	</tr>
+snippet <trbdb>
+	<tr>
+		<td>
+		${1}
+		</td>
+	</tr>
+snippet <trd
+	<tr><td ${1}></td></tr>
+snippet <trdb
+	<tr>
+		<td ${1}>
+		</td>
+	</tr>
+snippet <trbdb
+	<tr>
+		<td ${1}>
+		</td>
+	</tr>
+snippet trd>
+	<tr ${1}></tr>><td></td></tr>
+snippet trbd>
+	<tr ${1}>
+		<td></td>
+	</tr>
+snippet trbdb>
+	<tr ${1}></tr>>
+		<td>
+		</td>
+	</tr>
+snippet <th>
+	<th> ${1}</th>
+snippet <th>2
+	<th>${1}</th>
+	<th>${2}</th>
+snippet <th>3
+	<th>${1}</th>
+	<th>${2}</th>
+	<th>${3}</th>
+snippet <th>4
+	<th>${1}</th>
+	<th>${2}</th>
+	<th>${3}</th>
+	<th>${4}</th>
+snippet <th>5
+	<th>${1}</th>
+	<th>${2}</th>
+	<th>${3}</th>
+	<th>${4}</th>
+	<th>${5}</th>
+snippet <th>6
+	<th>${1}</th>
+	<th>${2}</th>
+	<th>${3}</th>
+	<th>${4}</th>
+	<th>${5}</th>
+	<th>${6}</th>
+snippet <th>7
+	<th>${1}</th>
+	<th>${2}</th>
+	<th>${3}</th>
+	<th>${4}</th>
+	<th>${5}</th>
+	<th>${6}</th>
+	<th>${7}</th>
+snippet <th>8
+	<th>${1}</th>
+	<th>${2}</th>
+	<th>${3}</th>
+	<th>${4}</th>
+	<th>${5}</th>
+	<th>${6}</th>
+	<th>${7}</th>
+	<th>${8}</th>
+snippet <th>9
+	<th>${1}</th>
+	<th>${2}</th>
+	<th>${3}</th>
+	<th>${4}</th>
+	<th>${5}</th>
+	<th>${6}</th>
+	<th>${7}</th>
+	<th>${8}</th>
+	<th>${9}</th>
+snippet <th>10
+	<th>${1}</th>
+	<th>${2}</th>
+	<th>${3}</th>
+	<th>${4}</th>
+	<th>${5}</th>
+	<th>${6}</th>
+	<th>${7}</th>
+	<th>${8}</th>
+	<th>${9}</th>
+	<th>${10}</th>
+snippet <thb>
+	<th>
+	${1}
+	</th>
+snippet <th
+	<th ${1}></th>
+snippet <thb
+	<th ${1}>
+	</th>
+snippet <trh>
+	<tr><th> ${1}</th></tr>
+snippet <trhb>
+	<tr>
+		<th> ${1}</th>
+	</tr>
+snippet <trbhb>
+	<tr>
+		<th>
+		${1}
+		</th>
+	</tr>
+snippet <trh
+	<tr><th ${1}></th></tr>
+snippet <trhb
+	<tr>
+		<th ${1}>
+		</th>
+	</tr>
+snippet <trbhb
+	<tr>
+		<th ${1}>
+		</th>
+	</tr>
+snippet trh>
+	<tr ${1}></tr>><th></th></tr>
+snippet trbh>
+	<tr ${1}>
+		<th></th>
+	</tr>
+snippet trbhb>
+	<tr ${1}></tr>>
+		<th>
+		</th>
+	</tr>
+#================================================Helpers Elements============================
+snippet abca
+	array(
+	'controller' =>	${1},
+	'action' =>	${2}
+	)
+snippet abca'
+	array(
+	'controller' =>	'${1}',
+	'action' =>	'${2}'${3}
+	)
+snippet abca"
+	array(
+	'controller' =>	"${1}",
+	'action' =>	"${2}"${3}
+	)
+snippet aca
+	array('controller' =>${1},	'action' =>${2})
+snippet aca'
+	array('controller' => '${1}',	'action' => '${2}'${4})
+snippet aca"
+	array('controller' => "${1}",	'action' => "${2}"${3})
+snippet aeC
+	'controller' => ${1}
+snippet aeC'
+	'controller' => '${1}'${2}
+snippet aeA
+	'action' => ${1}
+snippet aeA'
+	'action' => '${1}'${2}
+#++++++++++++++++++++++++++++++++++++++++++++++++Config Method+++++++++++++
+snippet conread
+	Configure::read(${1})
+snippet conread'
+	Configure::read('${1}')${2}
+snippet conread"
+	Configure::read("${1}")${2}
+snippet conr
+	Configure::read(${1})
+snippet conr'
+	Configure::read('${1}')${2}
+snippet conr"
+	Configure::read("${1}")${2}
+#++++++++++++++++++++++++++++++++++++++++++++++++Form Helper+++++++++++++++++++++++++++++++++
+#----------------------------------------------- Form Attribute Options----------------------
+snippet aebf
+	'before' => '${1}'${2}
+snippet aebt
+	'between' => '${1}'${2}
+snippet aeaf
+	'after' => '${1}'${2}
+snippet aeo
+	'options' =>${1}
+snippet aem
+	'options' => ${1:true}
+snippet aemax
+	'options' => ${1}
+snippet aediv
+	'div' => ${1:false}
+snippet ael
+	'label' => '${1}'
+snippet aeer
+	'error' => '${1}'${2}
+snippet aes
+	'selected' => '${1}'${2}
+snippet aers
+	'rows' => ${1}
+snippet aecs
+	'rows' => ${1}
+snippet aee
+	'empty' => ${1}
+snippet aef
+	'timeFormat' => '${1:12}'${2}
+snippet aedf
+	'dateFormat' => '${1:YMD}'${2}
+snippet aet
+	'type' => '${1}'${2}
+snippet aett
+	'type' => 'text'${1}
+snippet aetta
+	'type' => 'textarea'${1}
+snippet aetc
+	'type' => 'checkbox'${1}
+snippet aetd
+	'type' => 'date'${1}
+snippet aetdt
+	'type' => 'datetime'${1}
+snippet aeth
+	'type' => 'hidden'${1}
+snippet aetpw
+	'type' => 'password'${1}
+snippet aetr
+	'type' => 'radio'${1}
+snippet aets
+	'type' => 'select'${1}
+snippet aetf
+	'type' => 'file'${1}
+snippet aettm
+	'type' => 'time'${1}
+snippet aetdel
+	'type' => 'delete'${1}
+snippet aetg
+	'type' => 'get'${1}
+snippet aetp
+	'type' => 'post'${1}
+snippet aetpt
+	'type' => 'put'${1}
+snippet aesf
+	'onSubmit' => 'return false'${1}
+snippet aei
+	'id' => '${1}'
+snippet aec
+	'class' => '${1}'
+#--------------------------------------------------------------------------------------------
+snippet cfl
+	$content_for_layout
+snippet cfl;
+	$content_for_layout;
+snippet date
+	date(${1})
+snippet date'
+	date('${1}')
+snippet date"
+	date("${1}")
+snippet fo
+	$form->${1}
+snippet foerror
+	$form->error(${1})
+snippet foerror'
+	$form->error('${1}')${2}
+snippet foerror"
+	$form->error("${1}a)${2}"
+snippet foer
+	$form->error('${1}'${2})
+snippet foer'
+	$form->error('${1}')${2}
+snippet foer"
+	$form->error("${1}")${2}
+snippet fosubmit
+	$form->submit(${1})
+snippet fosubmit'
+	$form->submit('${1}'${2})
+snippet fos
+	$form->submit('${1}',array(${2}))
+snippet focreate
+	$form->create(${1})
+snippet focreate'
+	$form->create('${1}'${2})
+snippet focb
+	$form->create(${1}
+	)
+snippet focb'
+	$form->create('${1}',
+	)
+snippet focb"
+	$form->create("${1}",
+	)
+snippet foc
+	$form->create(${1})
+snippet foc'
+	$form->create('${1}'${2})
+snippet foc"
+	$form->create("${1}"${2})
+snippet pfoce
+	<?php echo $form->create(${1});?>
+	<?php echo $form->end(${2});?>
+snippet pfoce'
+	<?php echo $form->create('${1}'${2});?>
+	<?php echo $form->end('${3}');?>
+snippet pfocbe'
+	<?php echo $form->create('${1}',
+	);?>
+	<?php echo $form->end('${2}');?>
+snippet pfocbe
+	<?php echo $form->create(${1}
+	);?>
+	<?php echo $form->end('${1}');?>
+snippet foend
+	$form->end(${1})
+snippet foend'
+	$form->end('${1}'${2})
+snippet foe
+	$form->end(${1})
+snippet foe'
+	$form->end('${1}'${2})
+snippet foen
+	$form->end('${1}'${2})
+snippet fosecure
+	$form->secure(${1})
+snippet fose
+	$form->secure(array('${1}' =>array('${2}'${3})))
+snippet folabel
+	$form->label(${1})
+snippet fol
+	$form->label(${1})
+snippet fol'
+	$form->label('${1}','${2}',${3})
+snippet foinput
+	$form->input(${1})
+snippet foinput'
+	$form->input('${1}'${2})
+snippet foi
+	$form->input('${1}'${2})
+snippet fobutton
+	$form->button('${1}'${2})
+snippet fob
+	$form->button('${1}'${2})
+snippet focheckbox
+	$form->checkbox('${1}'${2})
+snippet fock
+	$form->checkbox('${1}'${2})
+snippet fofile
+	$form->file('${1}'${2})
+snippet fof
+	$form->file('${1}'${2})
+snippet fohidden
+	$form->hidden(${1})
+snippet foh
+	$form->hidden('${1}'${2})
+snippet fohidden'
+	$form->hidden('${1}'${2})
+snippet fohidden"
+	$form->hidden("${1}"${2})
+snippet foh'
+	$form->hidden('${1}',
+	)
+snippet foh"
+	$form->hidden("${1}",
+	)	
+snippet fopassword
+	$form->password(${1})
+snippet fop
+	$form->password('${1}'${2})
+snippet foradio
+	$form->radio(${1})
+snippet ford
+	$form->radio('${1}'${2})
+snippet foselect
+	$form->select(${1})
+snippet fosl
+	$form->select('${1}'${2})
+snippet fotext
+	$form->text(${1})
+snippet fot
+	$form->text('${1}'${2})
+snippet fotextarea
+	$form->textarea(${1})
+snippet fota
+	$form->textarea('${1}'${2})
+snippet fodatetime
+	$form->dateTime(${1})
+snippet fodt
+	$form->dateTime('${1}'${2})
+snippet foday
+	$form->day(${1})
+snippet fod
+	$form->day('${1}'${2})
+snippet fomonth
+	$form->month(${1})
+snippet fomon
+	$form->month('${1}'${2})
+snippet foyear
+	$form->year(${1})
+snippet foy
+	$form->year('${1}'${2})
+snippet fohour
+	$form->hour(${1})
+snippet foho
+	$form->hour('${1}'${2})
+snippet fominute
+	$form->minute(${1})
+snippet fomin
+	$form->minute('${1}'${2})
+snippet fomeridian
+	$form->meridian(${1})
+snippet fomer
+	$form->meridian('${1}'${2})
+#----------------------------------------------P form--------------------------------------------------
+snippet pc
+	<?php echo 
+snippet pfo
+	<?php echo $form->${1};?>
+snippet pfoerror
+	<?php echo $form->error(${1});?>
+snippet pfoerror'
+	<?php echo $form->error('${1}')${2};?>
+snippet pfoerror"
+	<?php echo $form->error("${1}a)${2}";?>
+snippet pfoer
+	<?php echo $form->error(${1});?>
+snippet pfoer'
+	<?php echo $form->error('${1}')${2};?>
+snippet pfoer"
+	<?php echo $form->error("${1}")${2};?>
+snippet pfosubmit
+	<?php echo $form->submit(${1});?>
+snippet pfosubmit'
+	<?php echo $form->submit('${1}'${2});?>
+snippet pfos
+	<?php echo $form->submit('${1}',array(${2}));?>
+snippet pfocreate
+	<?php echo $form->create(${1});?>
+snippet pfocreate'
+	<?php echo $form->create('${1}'${2});?>
+snippet pfocb
+	<?php echo $form->create(${1}
+	);?>
+snippet pfocb'
+	<?php echo $form->create('${1}',
+	);?>
+snippet pfocb"
+	<?php echo $form->create("${1}",
+	);?>
+snippet pfoc
+	<?php echo $form->create(${1});?>
+snippet pfoc'
+	<?php echo $form->create('${1}'${2});?>
+snippet pfoc"
+	<?php echo $form->create("${1}"${2});?>
+snippet pfoend
+	<?php echo $form->end(${1});?>
+snippet pfoend'
+	<?php echo $form->end('${1}');?>
+snippet pfoe
+	<?php echo $form->end(${1});?>
+snippet pfoe'
+	<?php echo $form->end('${1}');?>
+snippet pforen
+	<?php echo $form->end('${1}');?>
+snippet pfosecure
+	<?php echo $form->secure(${1});?>
+snippet pfose
+	<?php echo $form->secure(array('${1}' =>array('${2}'${3})));?>
+snippet pfolabel
+	<?php echo $form->label(${1});?>
+snippet pfol
+	<?php echo $form->label(${1});?>
+snippet pfol'
+	<?php echo $form->label('${1}','${2}',${3});?>
+snippet pfoinput
+	<?php echo $form->input(${1});?>
+snippet pfoinput'
+	<?php echo $form->input('${1}'${2});?>
+snippet pfoi
+	<?php echo $form->input('${1}'${2});?>
+snippet pfobutton
+	<?php echo $form->button(${1});?>
+snippet pfob
+	<?php echo $form->button('${1}'${2});?>
+snippet pfocheckbox
+	<?php echo $form->checkbox(${1});?>
+snippet pfock
+	<?php echo $form->checkbox('${1}'${2});?>
+snippet pfofile
+	<?php echo $form->file(${1});?>
+snippet pfof
+	<?php echo $form->file('${1}'${2});?>
+snippet pfohidden
+	<?php echo $form->hidden(${1});?>
+snippet pfoh
+	<?php echo $form->hidden('${1}'${2});?>
+snippet pfohidden'
+	<?php echo $form->hidden('${1}'${2});?>
+snippet pfohidden"
+	<?php echo $form->hidden("${1}"${2});?>
+snippet pfoh'
+	<?php echo $form->hidden('${1}',
+	);?>
+snippet pfoh"
+	<?php echo $form->hidden("${1}",
+	);?>
+snippet pfopassword
+	<?php echo $form->password(${1});?>
+snippet pfopw
+	<?php echo $form->password('${1}'${2});?>
+snippet pforadio
+	<?php echo $form->radio(${1});?>
+snippet pfora
+	<?php echo $form->radio('${1}'${2});?>
+snippet pfoselect
+	<?php echo $form->select(${1});?>
+snippet pfosl
+	<?php echo $form->select('${1}'${2});?>
+snippet pfotext
+	<?php echo $form->text(${1});?>
+snippet pfot
+	<?php echo $form->text('${1}'${2});?>
+snippet pfotextarea
+	<?php echo $form->textarea(${1});?>
+snippet pfota
+	<?php echo $form->textarea('${1}'${2});?>
+snippet pfodatetime
+	<?php echo $form->dateTime(${1});?>
+snippet pfodt
+	<?php echo $form->dateTime('${1}'${2});?>
+snippet pfoday
+	<?php echo $form->day(${1});?>
+snippet pfod
+	<?php echo $form->day('${1}'${2});?>
+snippet pfomonth
+	<?php echo $form->month(${1});?>
+snippet pfomon
+	<?php echo $form->month('${1}'${2});?>
+snippet pfoyear
+	<?php echo $form->year(${1});?>
+snippet pfoy
+	<?php echo $form->year('${1}'${2});?>
+snippet pfohour
+	<?php echo $form->hour(${1});?>
+snippet pfoho
+	<?php echo $form->hour('${1}'${2});?>
+snippet pfominute
+	<?php echo $form->minute(${1});?>
+snippet pfomin
+	<?php echo $form->minute('${1}'${2});?>
+snippet pfomeridian
+	<?php echo $form->meridian(${1});?>
+snippet pfomer
+	<?php echo $form->meridian('${1}'${2});?>
+#++++++++++++++++++++++++++++++++++++++++++++++++Html Helper++++++++++++++++++++++++++++++++
+snippet ht
+	$html->${1}
+snippet htcharset'
+	$html->charSet('${1}'${2})
+snippet htcharset
+	$html->charSet(${1})
+snippet htch'
+	$html->charSet('${1}'${2})
+snippet htch
+	$html->charSet(${1})
+snippet htcs'
+	$html->charSet('${1}'${2})
+snippet htcs
+	$html->charSet(${1})
+snippet htcsu
+	$html->charSet('UTF-8')${1}
+snippet htcss
+	$html->css(${1})
+snippet htcss'
+	$html->css('${1}'${2})
+snippet	htdiv
+	$html->div(${1})
+snippet htdoctype
+	$html->docType(${1})
+snippet htdt
+	$html->docType(${1})
+snippet htdt'
+	$html->docType('${1}')
+#+++++++++++++++++++++++++++++++++++++++
+snippet htlk
+	$html->link(${1})
+snippet htlkb
+	$html->link(${1}
+	       )
+snippet htlk'
+	$html->link('${1}'${2})
+snippet htlk"
+	$html->link("${1}"${2})
+snippet htlkb'
+	$html->link('${1}',
+	       )
+snippet htlkb"
+	$html->link("${1}",
+	       )
+snippet htl
+	$html->link('${1}',${2})
+snippet htlb
+	$html->link('${1}',${2})
+snippet htl'
+	$html->link('${1}','${2}')
+snippet htlb'
+	$html->link('${1}',
+				'${2}'
+	       )
+snippet htl"
+	$html->link("${1}","${2}")
+snippet htlb"
+	$html->link("${1}",
+				"${2}"
+	       )
+snippet htla
+	$html->link('${1}',array( 'controller' =>	${2}, 'action' =>	${3}) )
+snippet htla'
+	$html->link('${1}',array( 'controller' =>	'${2}', 'action' =>	'${3}') )
+snippet htla"
+	$html->link("${1}",array( 'controller' =>	"${2}", 'action' =>	"${3}") )
+snippet htlac
+	$html->link('${1}',array( 'controller' =>	${2}) )
+snippet htlac'
+	$html->link('${1}',array( 'controller' =>	'${2}') )
+snippet htlac"
+	$html->link("${1}",array( 'controller' =>	"${2}") )
+snippet htlaa
+	$html->link('${1}',array( 'action' =>	${3}) )
+snippet htlaa'
+	$html->link('${1}',array( 'action' =>	'${3}') )
+snippet htlaa"
+	$html->link("${1}",array( 'action' =>	"${3}") )
+snippet htlacb
+	$html->link('${1}',
+						array(
+						'controller' => ${1},
+						'action' => ${2}
+						)
+					)
+snippet htlacb'
+	$html->link('${1}',
+						array(
+						'controller' => '${1}',
+						'action' => '${2}'
+						)
+					)
+snippet htlacb"
+	$html->link("${1}",
+						array(
+						'controller' => "${1}",
+						'action' => "${2}"
+						)
+					)
+snippet htlk_
+	$html->link(__(${1},true))
+snippet htlkb_
+	$html->link(__(${1},true)
+	       )
+snippet htlk_'
+	$html->link(__('${1}',true)${2})
+snippet htlk_"
+	$html->link(__("${1}",true)${2})
+snippet htlkb_'
+	$html->link(__('${1}',true),
+	       )
+snippet htlkb_"
+	$html->link(__("${1}",true),
+	       )
+snippet htl_
+	$html->link(__('${1}',true),${2})
+snippet htlb_
+	$html->link(__('${1}',true),${2})
+snippet htl_'
+	$html->link(__('${1}',true),'${2}')
+snippet htlb_'
+	$html->link(__('${1}',true),
+				'${2}'
+	       )
+snippet htl_"
+	$html->link(__("${1}",true),"${2}")
+snippet htlb_"
+	$html->link(__("${1}",true),
+				"${2}"
+	       )
+snippet htla_
+	$html->link(__('${1}',true),array( 'controller' =>	${2}, 'action' =>	${3}) )
+snippet htla_'
+	$html->link(__('${1}',true),array( 'controller' =>	'${2}', 'action' =>	'${3}') )
+snippet htla_"
+	$html->link(__("${1}",true),array( 'controller' =>	"${2}", 'action' =>	"${3}") )
+snippet htlac_
+	$html->link(__('${1}',true),array( 'controller' =>	${2}) )
+snippet htlac_'
+	$html->link(__('${1}',true),array( 'controller' =>	'${2}') )
+snippet htlac_"
+	$html->link(__("${1}",true),array( 'controller' =>	"${2}") )
+snippet htlaa_
+	$html->link(__('${1}',true),array( 'action' =>	${3}) )
+snippet htlaa_'
+	$html->link(__('${1}',true),array( 'action' =>	'${3}') )
+snippet htlaa_"
+	$html->link(__("${1}",true),array( 'action' =>	"${3}") )
+snippet htlacb_
+	$html->link(__('${1}',true),
+						array(
+						'controller' => ${1},
+						'action' => ${2}
+						)
+					)
+snippet htlacb_'
+	$html->link(__('${1}',true),
+						array(
+						'controller' => '${1}',
+						'action' => '${2}'
+						)
+					)
+snippet htlacb_"
+	$html->link(__("${1}",true),
+						array(
+						'controller' => "${1}",
+						'action' => "${2}"
+						)
+					)
+snippet htim
+	$html->image(${1}
+	)
+snippet htim'
+	$html->image('${1}',
+	)
+snippet htim"
+	$html->image("${1}",
+	)
+snippet htmeta
+	$html->meta(${1})
+snippet htmt
+	$html->meta(${1})
+snippet htmeta'
+	$html->meta('${1}')
+snippet htmt'
+	$html->meta('${1}')
+snippet htnestedList
+	$html->nestedList(${1})
+snippet htnl
+	$html->nestedList(${1})
+snippet htpara
+	$html->para(${1})
+snippet htpr
+	$html->para(${1})
+snippet htstyle
+	$html->style(${1})
+snippet htst
+	$html->sytle(${1})
+snippet httableheders
+	$html->tableHeaders(${1})
+snippet httbh
+	$html->tableHeaders(${1})
+snippet hth
+	$html->tableHeaders(${1})
+snippet httablecells
+	$html->tableCells(${1})
+snippet htc
+	$html->tableCells(${1})
+snippet httbc
+	$html->tableCells(${1})
+snippet htaddcrumb
+	$html->addCrumb(${1})
+snippet htac
+	$html->addCrumb(${1})
+snippet htgetcrumb
+	$html->getCrumb(${1})
+snippet htgc
+	$html->getCrumb(${1})
+#++++++++++++++++++++++++++++++++++++++++++++++++PHP Html Helper++++++++++++++++++++++++++++++++
+snippet pht
+	<?php echo $html->${1};?>
+snippet phtcharset'
+	<?php echo $html->charSet('${1}'${2});?>
+snippet phtcharset
+	<?php echo $html->charSet(${1});?>
+snippet phtch'
+	<?php echo $html->charSet('${1}'${2});?>
+snippet phtch
+	<?php echo $html->charSet(${1});?>
+snippet phtcs'
+	<?php echo $html->charSet('${1}'${2});?>
+snippet phtcs
+	<?php echo $html->charSet(${1});?>
+snippet phtcsu
+	<?php echo $html->charSet('UTF-8')${1};?>
+snippet phtcss
+	<?php echo $html->css(${1});?>
+snippet phtcss'
+	<?php echo $html->css('${1}'${2});?>
+snippet	phtdiv
+	<?php echo $html->div(${1});?>
+snippet phtdoctype
+	<?php echo $html->docType(${1});?>
+snippet phtdt
+	<?php echo $html->docType(${1});?>
+snippet phtdt'
+	<?php echo $html->docType('${1}');?>
+#+++++++++++++++++++++++++++++++++++++++
+snippet phtlk
+	<?php echo $html->link(${1});?>
+snippet phtlkb
+	<?php echo $html->link(${1}
+	       );?>
+snippet phtlk'
+	<?php echo $html->link('${1}'${2});?>
+snippet phtlk"
+	<?php echo $html->link("${1}"${2});?>
+snippet phtlkb'
+	<?php echo $html->link('${1}',
+	       );?>
+snippet phtlkb"
+	<?php echo $html->link("${1}",
+	       );?>
+snippet phtl
+	<?php echo $html->link('${1}',${2});?>
+snippet phtlb
+	<?php echo $html->link('${1}',${2});?>
+snippet phtl'
+	<?php echo $html->link('${1}','${2}');?>
+snippet phtlb'
+	<?php echo $html->link('${1}',
+				'${2}'
+	       );?>
+snippet phtl"
+	<?php echo $html->link("${1}","${2}");?>
+snippet phtlb"
+	<?php echo $html->link("${1}",
+				"${2}"
+	       );?>
+snippet phtla
+	<?php echo $html->link('${1}',array( 'controller' =>	${2}, 'action' =>	${3}) );?>
+snippet phtla'
+	<?php echo $html->link('${1}',array( 'controller' =>	'${2}', 'action' =>	'${3}') );?>
+snippet phtla"
+	<?php echo $html->link("${1}",array( 'controller' =>	"${2}", 'action' =>	"${3}") );?>
+snippet phtlac
+	<?php echo $html->link('${1}',array( 'controller' =>	${2}) );?>
+snippet phtlac'
+	<?php echo $html->link('${1}',array( 'controller' =>	'${2}') );?>
+snippet phtlac"
+	<?php echo $html->link("${1}",array( 'controller' =>	"${2}") );?>
+snippet phtlaa
+	<?php echo $html->link('${1}',array( 'action' =>	${3}) );?>
+snippet phtlaa'
+	<?php echo $html->link('${1}',array( 'action' =>	'${3}') );?>
+snippet phtlaa"
+	<?php echo $html->link("${1}",array( 'action' =>	"${3}") );?>
+snippet phtlacb
+	<?php echo $html->link('${1}',
+						array(
+						'controller' => ${1},
+						'action' => ${2}
+						)
+					);?>
+snippet phtlacb'
+	<?php echo $html->link('${1}',
+						array(
+						'controller' => '${1}',
+						'action' => '${2}'
+						)
+					);?>
+snippet phtlacb"
+	<?php echo $html->link("${1}",
+						array(
+						'controller' => "${1}",
+						'action' => "${2}"
+						)
+					);?>
+snippet phtlk_
+	<?php echo $html->link(__(${1},true));?>
+snippet phtlkb_
+	<?php echo $html->link(__(${1},true)
+	       );?>
+snippet phtlk_'
+	<?php echo $html->link(__('${1}',true)${2});?>
+snippet phtlk_"
+	<?php echo $html->link(__("${1}",true)${2});?>
+snippet phtlkb_'
+	<?php echo $html->link(__('${1}',true),
+	       );?>
+snippet phtlkb_"
+	<?php echo $html->link(__("${1}",true),
+	       );?>
+snippet phtl_
+	<?php echo $html->link(__('${1}',true),${2});?>
+snippet phtlb_
+	<?php echo $html->link(__('${1}',true),${2});?>
+snippet phtl_'
+	<?php echo $html->link(__('${1}',true),'${2}');?>
+snippet phtlb_'
+	<?php echo $html->link(__('${1}',true),
+				'${2}'
+	       );?>
+snippet phtl_"
+	<?php echo $html->link(__("${1}",true),"${2}");?>
+snippet phtlb_"
+	<?php echo $html->link(__("${1}",true),
+				"${2}"
+	       );?>
+snippet phtla_
+	<?php echo $html->link(__('${1}',true),array( 'controller' =>	${2}, 'action' =>	${3}) );?>
+snippet phtla_'
+	<?php echo $html->link(__('${1}',true),array( 'controller' =>	'${2}', 'action' =>	'${3}') );?>
+snippet phtla_"
+	<?php echo $html->link(__("${1}",true),array( 'controller' =>	"${2}", 'action' =>	"${3}") );?>
+snippet phtlac_
+	<?php echo $html->link(__('${1}',true),array( 'controller' =>	${2}) );?>
+snippet phtlac_'
+	<?php echo $html->link(__('${1}',true),array( 'controller' =>	'${2}') );?>
+snippet phtlac_"
+	<?php echo $html->link(__("${1}",true),array( 'controller' =>	"${2}") );?>
+snippet phtlaa_
+	<?php echo $html->link(__('${1}',true),array( 'action' =>	${3}) );?>
+snippet phtlaa_'
+	<?php echo $html->link(__('${1}',true),array( 'action' =>	'${3}') );?>
+snippet phtlaa_"
+	<?php echo $html->link(__("${1}",true),array( 'action' =>	"${3}") );?>
+snippet phtlacb_
+	<?php echo $html->link(__('${1}',true),
+						array(
+						'controller' => ${1},
+						'action' => ${2}
+						)
+					);?>
+snippet phtlacb_'
+	<?php echo $html->link(__('${1}',true),
+						array(
+						'controller' => '${1}',
+						'action' => '${2}'
+						)
+					);?>
+snippet phtlacb_"
+	<?php echo $html->link(__("${1}",true),
+						array(
+						'controller' => "${1}",
+						'action' => "${2}"
+						)
+					);?>
+snippet phtim
+	<?php echo $html->image(${1}
+	);?>
+snippet phtim'
+	<?php echo $html->image('${1}',
+	);?>
+snippet phtim"
+	<?php echo $html->image("${1}",
+	);?>
+snippet phtmeta
+	<?php echo $html->meta(${1});?>
+snippet phtmt
+	<?php echo $html->meta(${1});?>
+snippet phtmeta'
+	<?php echo $html->meta('${1}');?>
+snippet phtmt'
+	<?php echo $html->meta('${1}');?>
+snippet phtnestedList
+	<?php echo $html->nestedList(${1});?>
+snippet phtnl
+	<?php echo $html->nestedList(${1});?>
+snippet phtpara
+	<?php echo $html->para(${1});?>
+snippet phtpr
+	<?php echo $html->para(${1});?>
+snippet phtstyle
+	<?php echo $html->style(${1});?>
+snippet phtst
+	<?php echo $html->sytle(${1});?>
+snippet phttableheders
+	<?php echo $html->tableHeaders(${1});?>
+snippet phttbh
+	<?php echo $html->tableHeaders(${1});?>
+snippet phth
+	<?php echo $html->tableHeaders(${1});?>
+snippet phttablecells
+	<?php echo $html->tableCells(${1});?>
+snippet phtc
+	<?php echo $html->tableCells(${1});?>
+snippet phttbc
+	<?php echo $html->tableCells(${1});?>
+snippet phtaddcrumb
+	<?php echo $html->addCrumb(${1});?>
+snippet phtac
+	<?php echo $html->addCrumb(${1});?>
+snippet phtgetcrumb
+	<?php echo $html->getCrumb(${1});?>
+snippet phtgc
+	<?php echo $html->getCrumb(${1});?>
+#+++++++++++++++++++++++++++++++++++++++++This++++++++++++++++++++++++++++++++++++
+snippet th
+	$this->${1}
+snippet th[
+	$this->${1}[${2}]
+snippet th['
+	$this->${1}['${2}']${3}
+snippet th["
+	$this->${1}["${2}"]${3}
+snippet th[[
+	$this->${1}[${2}][${3}]
+snippet th[['
+	$this->${1}['${2}']['${3}']${4}
+snippet th[["
+	$this->${1}["${2}"]["${3}"]${4}
+snippet thd
+	$this->data${1}
+snippet thd[
+	$this->data[${1}]
+snippet thd['
+	$this->data['${1}']${2}
+snippet thd["
+	$this->data["${1}"]${2}
+snippet thd[[
+	$this->data[${1}][${2}]
+snippet thd[['
+	$this->data['${1}']['${2}']${3}
+snippet thelement
+	$this->element(${1})
+snippet thelement'
+	$this->element('${1}')
+snippet thelement"
+	$this->element("${1}")
+snippet the
+	$this->element(${1})
+snippet the'
+	$this->element('${1}')
+snippet the"
+	$this->element("${1}")
+snippet thpa
+	$this->passedArgs[${1}]
+snippet thpa'
+	$this->passedArgs['${1}']
+snippet thpa"
+	$this->passedArgs["${1}"]
+snippet thpr
+	$this->params[${1}]
+snippet thpr'
+	$this->params['${1}']
+snippet thprc
+	$this->params['controller']${1}
+snippet thpra
+	$this->params['action']${1}
+snippet thr
+	$this->RequestHandler->${1};
+snippet thrra
+	$this->RequestHandler->renderAs(${1});
+snippet thria
+	$this->RequestHandler->isAjax()
+#================================================CSS Code=======================================
+snippet	qb
+	${1} {
+	${2}
+	}
+snippet c
+	${1} {
+	${2}
+	}
+snippet cu
+	url("${1}")${2}
+snippet url
+	url("${1}")${2}
+snippet pd:
+	padding: ${1};${2}
+snippet pt:
+	padding-top: ${1};${2}
+snippet pr:
+	padding-right: ${1};${2}
+snippet pb:
+	padding-bottom: ${1};${2}
+snippet pl:
+	padding-left: ${1};${2}
+snippet pa:
+	padding: ${1};${2}
+snippet mg: 
+	margin: ${1};${2}
+snippet ma: 
+	margin: ${1};${2}
+snippet mt:
+	margin-top: ${1};${2}
+snippet mr:
+	margin-right: ${1};${2}
+snippet mb:
+	margin-bottom: ${1};${2}
+snippet ml:
+	margin-left: ${1};${2}
+snippet bo:
+	border: ${1};${2}
+snippet bt:
+	border-top: ${1};${2}
+snippet br:
+	border-right: ${1};${2}
+snippet bb:
+	border-bottom: ${1};${2}
+snippet bl:
+	border-bottom: ${1};${2}
+snippet bc:
+	border-collapse: ${1:collapse}${2};${3}
+snippet bs:
+	border-spacing: ${1};${2}
+snippet ff:
+	font-family: ${1};${2}
+snippet fs:
+	font-size: ${1};${2}
+snippet fw:
+	font-weight: ${1};${2}
+snippet fwb:
+	font-weight: ${1:bold};${2}
+snippet fwl:
+	font-weight: ${1:lighter};${2}
+snippet fwn:
+	font-weight: ${1:normal};${2}
+snippet bg:
+	background: ${1};${2}
+snippet bgc:
+	background-color: ${1};${2}
+snippet bgi:
+	background: url("${1}")${2};
+snippet bi:
+	background-image: ${1};${2}
+snippet cl:
+	clear: ${1:both};${2}
+snippet co:
+	color: ${1};${2}
+snippet con:
+	content: ${1};${2}
+snippet di:
+	display: ${1};${2}
+snippet dib:
+	display: ${1:block};${2}
+snippet dii:
+	display: ${1:inline};${2}
+snippet dibi:
+	display: ${1:block-inline};${2}
+snippet din:
+	display: ${1:none};${2}
+snippet fl:
+	float: ${1:left};${2}
+snippet fll:
+	float: ${1:left};${2}
+snippet flr:
+	float: ${1:right};${2}
+snippet he:
+	height: ${1};${2}
+snippet lh:
+	line-height: ${1};${2}
+snippet ol:
+	outline: ${1};${2}
+snippet ou:
+	outline: ${1};${2}
+snippet mou:
+	-moz-outline-style: ${1};${2}
+snippet lsi:
+	list-style-image: ${1};${2}
+snippet lsp:
+	list-style-position: ${1};${2}
+snippet lst:
+	list-style-type: ${1};${2}
+snippet le:
+	left: ${1};${2}
+snippet mih:
+	min-height: ${1};
+snippet miw:
+	min-weight: ${1};
+snippet mah:
+	max-height: ${1};
+snippet maw:
+	max-width: ${1};
+snippet po:
+	position: ${1};${2}
+snippet por:
+	position: ${1:relative};${2}
+snippet poa:
+	position: ${1:absolute};${2}
+snippet ri:
+	right: ${1};${2}
+snippet :rx
+	repeat-x${1} 
+snippet :ry
+	repeat-y${1}
+snippet :rp
+	repeat${1}
+snippet :nr
+	no-repeat${1}
+snippet bot:
+	bottom: ${1};${2}
+snippet ov:
+	overflow: ${1};
+snippet ovh:
+	overflow: ${1:hidden};${2}
+snippet ova:
+	overflow: ${1:outo};${2}
+snippet ta:
+	text-align: ${1};${2}
+snippet tar:
+	text-align: ${1:right};${2}
+snippet tal:
+	text-align: ${1:left};${2}
+snippet tac:
+	text-align: ${1:center};${2}
+snippet td:
+	text-decoration: ${1};${2}
+snippet to:
+	top: ${1};${2}
+snippet vi:
+	visibility: ${1:hidden};${2}
+snippet wi:
+	width: ${1};${2}
+#================================================WordPress codes=================================
+snippet bloginfo
+	blogingo('${1}')${2}
+snippet bi
+	blogingo('${1}')${2}
+snippet pbi
+	<?php blogingo('${1}');${2}?>
+snippet pbname
+	<?php bloginfo('name');${1} ?>
+snippet bname
+	bolginfo('name')${1}
+snippet burl
+	bloginfo('url')${1}
+snippet pburl
+	<?php bloginfo('url');${1}?>
+snippet bstylesheeturl
+	bloginfo('stylesheet_url')${1}
+snippet bsturl
+	bloginfo('stylesheet_url')${1}
+snippet pbsturl
+	<?php bloginfo('stylesheet_url');${1}?>
+snippet bdescription
+	bloginfo('description')${1}
+snippet bdes
+	bloginfo('description')${1}
+snippet pbdes
+	<?php bloginfo('description');${1}?>
+snippet gh
+	get_header();${1}
+snippet pgh
+	<?php get_header();${1}?>
+snippet gs
+	get_sidebar();${1}
+snippet pgs
+	<?php get_sidebar();${1}?>
+snippet gsf
+	get_search_form();${1}
+snippet pgsf
+	<?php get_search_form();${1}?>
+snippet gf
+	get_footer();${1}
+snippet pgf
+	<?php get_footer();?>
+snippet ifposts
+	if(have_posts()):
+	${1}
+	endif;
+#===================================================Cake & JQuery =========================================
+snippet jqs
+	<?php echo $form->button('${1}',array('onClick' => "$('${2}').ajaxSubmit({target:'${3}',url:'".$html->url('${4}')."});return false;"));?>
+#===================================================JQuery Only ===========================================
+#++++++++++++++++++++++++++++++++++++++++++++++++++ Symbols +++++++++++++++++++++++++++++++++++++++++++++++
+snippet ({
+	({${1}})
+snippet ({;
+	({${1}});
+#++++++++++++++++++++++++++++++++++++++++++++++++++ Variables +++++++++++++++++++++++++++++++++++++++++++++
+#++++++++++++++++++++++++++++++++++++++++++++++++++ JQuery Selections ++++++++++++++++++++++++++++++++++++
+snippet jt
+	target:${1}
+snippet jt'
+	target: '${1}'${2}
+snippet jt"
+	target: "${1}"${2}
+#++++++++++++++++++++++++++++++++++++++++++++++++++ Functions +++++++++++++++++++++++++++++++++++++++++++++s
+snippet fname
+	`Filename('$1.txt')`
+snippet test
+	1${1:}2${2:aaa}3${3:}4${4}$1$3
+#	a${1:1}b${2:22}c${3:333}d${4}${5}
+snippet test0
+	e${5}a${1}b${2}c${3}d${4}
+snippet test1
+	${1:test}
+snippet smp
+	call snipMate#p()
+snippet sss
+	1${1:111}2${2:22}3${3:33}4${4:44}
+snippet dadada
+	wo shi au dadada
+snippet .n
+	.new(${1})${2}
